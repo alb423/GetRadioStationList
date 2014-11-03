@@ -135,16 +135,21 @@
     
     // Test
     // a. Dump the station list
-//    int i = 0;
-//    NSString *pHLSURL;
+    int i = 0;
+    NSString *pHLSURL;
+
+    pHLSURL = [self getUrlByRadioStationId: @"177"];
+    pHLSURL = [self getUrlByRadioStationId: @"205"];
+    //NSLog(@"%@", pHLSURL);
+    
 //    for(i=0; i<pStations.count; i++)
 //    {
 //        RadioStationItem *pItem1 = [pStations objectAtIndex:i] ;
 //        pHLSURL = [self getUrlByRadioStationId: pItem1.radioId];
 //        NSLog(@"%@ %@ %@\n%@", pItem1.radioId, pItem1.title, pItem1.myTitle, pItem1.myUrl);
 //    }
-//    
-//    // b. Try to get HLS URL
+//
+//
 //    for(i=0; i<pStations.count; i++)
 //    {
 //        RadioStationItem *pItem2 = [pStations objectAtIndex:i] ;
@@ -192,7 +197,7 @@
             
             pHLSURL = [string substringWithRange:range3];
             //NSLog(@"%@",string);
-            //NSLog(@"%@",pHLSURL);
+            NSLog(@"%@",pHLSURL);
             break;
         }
     }
